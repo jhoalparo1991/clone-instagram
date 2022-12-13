@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+:root {
+    --white: #ffffff;
+    --dark-color:#566573;
+    --black:#000000;
+    --sm:12px;
+    --md:16px;
+    --lg:20px;
+}
+
+/* General styles */
 *{
     margin: 0;
     padding: 0;
@@ -6,4 +17,117 @@
 }
 body{
     font-family: 'Montserrat', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+/* Container */
+
+.container{
+    background: var(--white);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header image */
+.container header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #ccc;
+}
+.container header .figure-image{
+    width: 150px;
+    height: 150px;
+    margin-right: 100px;
+}
+
+.container header .figure-image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+/* Header info */
+
+.info-profile{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-profile .setting-account{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.info-profile .setting-account .username{
+    font-size: var(--lg);
+    font-weight: 400;
+    color: var(--dark-color);
+}
+
+.info-profile .setting-account .navbar{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-profile .setting-account .navbar li{
+    font-weight: 500;
+    background-color: rgb(233, 233, 233);
+    padding: 8px 20px 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info-profile .setting-account .img-setting{
+    width: 30px;
+}
+
+.info-profile .follows-post{
+    display: flex;
+    gap: 50px;
+    color: var(--dark-color);
+    margin-bottom: 30px;
+}
+
+.info-profile .follows-post .numbers{
+    font-weight: 700;
+}
+
+.info-profile .fullname{
+    font-weight: 500;
+    color: var(--black);
+    font-size: var(--lg);
+}
+
+@media (max-width:640px){
+    .container header .figure-image{
+        margin-right: 10px;
+    }
+    .container header{
+        flex-direction: column;
+    }
+    .info-profile .setting-account, .info-profile .setting-account .navbar{
+        flex-direction: column;
+    }
+
+    .info-profile .follows-post {
+        gap: 20px;
+        text-align: center;
+    }
+
+    .fullname{
+        text-align: center;
+    }
+
+
 }
