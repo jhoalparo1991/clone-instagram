@@ -1,0 +1,31 @@
+{
+  "name": "clone-instagram",
+  "version": "1.0.0",
+  "description": "clone instagram consumiendo servicio de api externa de RapidApi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhoalparo1991/clone-instagram.git"
+  },
+  "keywords": [
+    "api",
+    "node",
+    "javascript",
+    "async",
+    "await",
+    "fetch"
+  ],
+  "author": "jhonatan padilla [jhoalparo1991@gmail.com]",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jhoalparo1991/clone-instagram/issues"
+  },
+  "homepage": "https://github.com/jhoalparo1991/clone-instagram#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.0"
+  },
+  "type": "module"
+}
